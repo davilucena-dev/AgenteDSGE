@@ -223,3 +223,6 @@ MIT — uso livre e aberto para fins acadêmicos e de pesquisa.
 ---
 
 *AgenteDSGE · v2.1 · Protocolo de 17 Etapas · Octave + Dynare · Zero Alucinação · Reprodutibilidade Absoluta*
+
+## Créditos
+# Davi Lucena da Silva - Doutorando em Economia Aplicada (UFV)

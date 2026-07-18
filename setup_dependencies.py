@@ -958,8 +958,8 @@ def setup_agent():
         cfg = {}
 
     cfg["default_agent"] = "dsge"
-    #cfg["tab_title"] = "AgenteDSGE — Modelagem Macroeconômica"
-    cfg["model"] = "deepseek-v4-flash-free"
+    # cfg["tab_title"] = "AgenteDSGE — Modelagem Macroeconômica"
+    # cfg["model"] = "deepseek-v4-flash-free"
 
     with open(OPENCODE_CFG, "w", encoding="utf-8") as f:
         json.dump(cfg, f, indent=2)

@@ -58,87 +58,16 @@ SETUP_LOG  = os.path.expanduser("~/.agents/skills_install_log.json")
 # ══════════════════════════════════════════════════════════════
 
 REMOTE_SKILLS = [
-    # ──────────────────────────────────────────────────────────
-    # SKILL 1 — Estimação Bayesiana de DSGE
-    # ──────────────────────────────────────────────────────────
-    # Faz: MCMC (Metropolis-Hastings), diagnóstico Brooks-Gelman,
-    #      cálculo de posteriores, HPDI, comparação de modelos.
-    # Dados: não requer dados externos — opera sobre o .mod.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-estimacao-bayesiana-dsge.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 2 — Calibração com Dados Brasileiros
-    # ──────────────────────────────────────────────────────────
-    # Faz: consulta IBGE/SIDRA, BCB/SGS, IPEADATA para extrair
-    #      parâmetros de calibração (α, β, δ, etc.).
-    # Dados: IBGE (SCN, PNAD), BCB (SGS), IPEADATA.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-calibracao-dados-br.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 3 — Geração de Código Dynare
-    # ──────────────────────────────────────────────────────────
-    # Faz: a partir do sistema linearizado, monta o arquivo .mod
-    #      completo com var, varexo, parameters, model, estimation.
-    # Dados: não requer — gera código text.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-geracao-dynare.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 4 — Biblioteca de Modelos DSGE Base
-    # ──────────────────────────────────────────────────────────
-    # Faz: fornece modelos prontos (RBC, NK, NK aberto, fiscal,
-    #      financeiro) para usar como ponto de partida.
-    # Dados: parâmetros calibrados e equações pré-definidas.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-modelos-base-dsge.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 5 — Análise de IRFs e Decomposições
-    # ──────────────────────────────────────────────────────────
-    # Faz: gráficos profissionais de IRF, decomposição de variância,
-    #      decomposição histórica, previsão, contrafactuais.
-    # Dados: saída do Dynare ou das matrizes P e Q.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-irf-analise.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 6 — Validação e Diagnóstico de DSGE
-    # ──────────────────────────────────────────────────────────
-    # Faz: testes de robustez, análise de identificação, cheque
-    #      de momentos, validação cruzada, testes de especificação.
-    # Dados: resultados da estimação + dados observados.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-validacao-dsge.git"
-    # ──────────────────────────────────────────────────────────
-
-    # ──────────────────────────────────────────────────────────
-    # SKILL 7 — Álgebra Linear para DSGE
-    # ──────────────────────────────────────────────────────────
-    # Faz: decomposição QZ, solução de Klein/Sims, verificação
-    #      de Blanchard-Kahn, forma matricial.
-    # Dados: sistema linearizado do modelo.
-    # Status: ⬜ não implementada — placeholder para desenvolvimento.
-    # URL_EXAMPLE: "https://github.com/usuario/skill-algebra-linear-dsge.git"
-    # ──────────────────────────────────────────────────────────
+    ("https://github.com/davilucena-dev/skill-estimacao-bayesiana-dsge.git", "skill-estimacao-bayesiana-dsge"),
+    ("https://github.com/davilucena-dev/skill-calibracao-dados-br.git", "skill-calibracao-dados-br"),
+    ("https://github.com/davilucena-dev/skill-geracao-dynare.git", "skill-geracao-dynare"),
+    ("https://github.com/davilucena-dev/skill-irf-analise.git", "skill-irf-analise"),
+    ("https://github.com/davilucena-dev/skill-validacao-dsge.git", "skill-validacao-dsge"),
+    ("https://github.com/davilucena-dev/skill-algebra-linear-dsge.git", "skill-algebra-linear-dsge"),
+    ("https://github.com/davilucena-dev/skill-octave-dsge.git", "skill-octave-dsge"),
+    ("https://github.com/davilucena-dev/skill-modelos-base-dsge.git", "skill-modelos-base-dsge"),
+    
 ]
-
-# ── NOTA PARA O DESENVOLVEDOR ──
-# Para ATIVAR uma skill externa, descomente a tupla correspondente
-# e substitua URL_EXAMPLE pela URL real do repositório.
-# Exemplo ativo:
-#   ("https://github.com/meuuser/skill-estimacao-bayesiana-dsge.git",
-#    "estimacao-bayesiana-dsge"),
-#
-# O nome da pasta (segundo elemento) DEVE ser o mesmo nome do
-# repositório (sem o .git) para consistência.
-# ══════════════════════════════════════════════════════════════
 
 
 # ══════════════════════════════════════════════════════════════
